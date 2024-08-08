@@ -41,10 +41,10 @@
 
 @font-face {
   font-family: "Basement";
-  src: url("/personal-website/fonts/BSBlack.eot");
-  src: url("/personal-website/fonts/BSBlack.eot?#iefix") format("embedded-opentype"),
-    url("/personal-website/fonts/BSBlack.woff2") format("woff2"),
-    url("/personal-website/fonts/BSBlack.woff") format("woff");
+  src: url("../fonts/BSBlack.eot");
+  src: url("../fonts/BSBlack.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/BSBlack.woff2") format("woff2"),
+    url("../fonts/BSBlack.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   descent-override: 0%;
