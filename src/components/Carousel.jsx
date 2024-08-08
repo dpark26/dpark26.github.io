@@ -16,35 +16,35 @@ export default function Carousel() {
             <SwiperSlide className={styles['carousel-container']}>
                 <img
                     className={styles['carousel-img']}
-                    src="/images/grad.jpg"
+                    src="/personal-website/images/grad.jpg"
                     alt="Graduation"
                 />
             </SwiperSlide>
             <SwiperSlide className={styles['carousel-container']}>
                 <img
                     className={styles['carousel-img']}
-                    src="/images/research_team.JPG"
+                    src="/personal-website/images/research_team.JPG"
                     alt="Research Awards"
                 />
             </SwiperSlide>
             <SwiperSlide className={styles['carousel-container']}>
                 <img
                     className={styles['carousel-img']}
-                    src="/images/eng_team.jpg"
+                    src="/personal-website/images/eng_team.jpg"
                     alt="Engineering Team"
                 />
             </SwiperSlide>
             <SwiperSlide className={styles['carousel-container']}>
                 <img
                     className={styles['carousel-img']}
-                    src="/images/cfg.JPG"
+                    src="/personal-website/images/cfg.JPG"
                     alt="Camp Flog Gnaw"
                 />
             </SwiperSlide>
             <SwiperSlide className={styles['carousel-container']}>
                 <img
                     className={styles['carousel-img']}
-                    src="/images/zoom.jpg"
+                    src="/personal-website/images/zoom.jpg"
                     alt="Zoom"
                 />
             </SwiperSlide>
