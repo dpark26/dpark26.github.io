@@ -1,10 +1,76 @@
-<section class="border-white/20  border-b">
-  <div class="mx-auto border-white/20  border-x max-w-7xl">
+---
+const pdfUrl = "/work/Daniel Park Resume.pdf";
+---
+
+<section class="border-white/20 border-b">
+  <div class="mx-auto border-white/20 border-x max-w-7xl">
     <div class="bg-transparent duration-200 group hover:bg-carrot">
-      <a
-        href="mailto:michael@andreuzza.com"
+      <button
         class="text-white text-center items-center w-full bg-carrot duration-200 focus:outline-disc focus:ring-0 font-display font-medium hoder:rounded-0 inline-flex justify-center lg:py-12 lg:text-6xl px-4 py-6 rounded-full text-3xl"
-        >Get a quote</a>
+        id="popupImage">Resume</button
+      >
     </div>
   </div>
 </section>
+
+<style>
+  .popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 80%;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1001;
+  }
+
+  .popup.active {
+    display: block;
+  }
+
+  .popup img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .popup .pdf-viewer {
+    width: 100%;
+    height: 100%;
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+</style>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="popup" id="popup">
+  <iframe class="pdf-viewer" src={pdfUrl}></iframe>
+</div>
+
+<script>
+  document.getElementById("popupImage").addEventListener("click", () => {
+    document.getElementById("popup").classList.add("active");
+    document.getElementById("overlay").classList.add("active");
+  });
+
+  document.getElementById("overlay").addEventListener("click", () => {
+    document.getElementById("popup").classList.remove("active");
+    document.getElementById("overlay").classList.remove("active");
+  });
+</script>

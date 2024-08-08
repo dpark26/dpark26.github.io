@@ -11,17 +11,26 @@
   },
   "dependencies": {
     "@astrojs/preact": "^3.5.0",
+    "@astrojs/react": "^3.6.1",
     "@astrojs/sitemap": "^3.1.6",
     "@astrojs/tailwind": "^5.1.0",
+    "@iconify-icons/mingcute": "^1.2.9",
     "astro": "^4.11.3",
+    "astro-carousel": "^2.0.8",
+    "astro-icon": "^1.1.0",
     "install": "^0.13.0",
     "npm": "^10.8.1",
     "preact": "^10.22.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "swiper": "^11.1.9",
     "tailwindcss": "^3.4.4"
   },
   "devDependencies": {
+    "@iconify-json/mingcute": "^1.1.19",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.7",
-    "@tailwindcss/typography": "^0.5.13"
+    "@tailwindcss/typography": "^0.5.13",
+    "sass": "^1.77.8"
   }
 }

@@ -1,0 +1,12 @@
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-img {
+    max-height: 75vh;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
